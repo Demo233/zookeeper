@@ -1,4 +1,4 @@
-package com.edu;
+package com.edu.zookeeper;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
@@ -10,14 +10,14 @@ import java.util.List;
 
 
 /**
- * 完成zookeeper对节点的曾删改查操作
+ * 完成zookeeper对节点的增删改查操作
  */
 
 public class ZkDemo1 {
 
     private static ZooKeeper zk = null;
 
-    private static String connectionString = "192.168.100.109,192.168.100.111,192.168.100.112";
+    private static String connectionString = "192.168.1.119:2181,192.168.1.120:2181,192.168.1.121:2181,192.168.1.122:2181";
 
     private static int sessionTimeout = 2000;
 
